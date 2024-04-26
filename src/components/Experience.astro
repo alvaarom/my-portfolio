@@ -1,0 +1,43 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+  {
+    date: "2023 - Actualidad",
+    title: "Desarrollador Full Stack",
+    company: "Waia",
+    description:
+      "Desarrollo de aplicaciones a demanda con distintas tecnologias. React JS, React Native, NextJS, TailwindCSS, NodeJS, Express, MongoDB, Docker, AWS, Digital Ocean.",
+  },
+  {
+    date: "2022 - 2023",
+    title: "Tech Lead",
+    company: "Terragene",
+    description:
+      "Equipo conformado por 4 personas. Tecnologias: ReactJS, React Native, NodeJS, Express, Docker, AWS (S3, EC2) Gestion con Jira aplicando la metodologia scrum.",
+  },
+  {
+    date: "2020 - 2022",
+    title: "Desarrollador Full Stack",
+    company: "Terragene",
+    description:
+      "Desarrollador de aplicaciones mobiles con React Native, NodeJS, Express, Docker, AWS. (S3, EC2) Mantenimiento de sitio web desarrollado con React JS.",
+  },
+  {
+    date: "2018 - 2020",
+    title: "Analista en Infraestructura",
+    company: "Terragene",
+    description:
+      "Asistencia, soporte y resolución de tickets reportados por usuarios. Documentación de las soluciones implementadas. Configuración y mantenimiento de equipos en red informática. Reparación y mantenimiento de impresoras.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
